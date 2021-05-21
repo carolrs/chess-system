@@ -1,7 +1,5 @@
 package application;
 
-import boadgame.Board;
-import boadgame.Position;
 import chess.ChessException;
 import chess.ChessMatch;
 import chess.ChessPiece;
@@ -19,7 +17,7 @@ public class Program {
         while (true){
             try {
                 UI.clearScreen();
-                UI.printBoard( chessMatch.getPieces() );
+                UI.printMatch(chessMatch);
                 System.out.println();
                 System.out.println( "Source: " );
                 ChessPosition source = UI.readChessPosition( sc );
